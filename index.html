@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; form-action https://api.web3forms.com;">
+  <title>TrueFinish | Exterior Cleaning</title>
+  <meta name="description" content="TrueFinish exterior cleaning for windows, gutters, driveways, and house wash services." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">TrueFinish</a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section reveal">
+      <div class="hero-copy">
+        <p class="kicker">Residential Exterior Cleaning</p>
+        <h1>Clean Lines. Bright Finish. TrueFinish.</h1>
+        <p>
+          We clean windows, gutters, driveways, and siding with detail-focused service that makes homes look
+          fresh.
+        </p>
+        <a class="btn" href="#contact">Request A Quote</a>
+      </div>
+      <div class="hero-photo-wrap">
+        <img src="images/IMG_20260416_212352.png" alt="TrueFinish cleaner washing exterior windows" />
+      </div>
+    </section>
+
+    <section id="services" class="section panel reveal">
+      <div class="section-head">
+        <p class="kicker">What We Clean</p>
+        <h2>Core Services</h2>
+      </div>
+      <div class="service-grid">
+        <article>
+          <h3>Windows</h3>
+          <p>We clean the glass, the frames, tracks, sills, and screens using a t-bar and a special solution</p>
+        </article>
+        <article>
+          <h3>Gutters</h3>
+          <p>Removal of buildup and dark lines to improve drainage and curb appeal.</p>
+        </article>
+        <article>
+          <h3>Driveways</h3>
+          <p>Concrete and paver pressure cleaning to remove dirt, algae, and marks.</p>
+        </article>
+        <article>
+          <h3>House Wash</h3>
+          <p>Soft wash methods for siding and exterior surfaces without damage.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section reveal">
+      <div class="section-head">
+        <p class="kicker">From The Field</p>
+        <h2>Recent Work</h2>
+      </div>
+      <div class="photo-grid">
+        <img class="gallery-image" src="images/IMG_20260416_212345.png" alt="Powerwashing gutters above garage door" />
+        <img class="gallery-image" src="images/IMG_20260416_212348.png" alt="Window cleaning on a brick home" />
+        <img class="gallery-image" src="images/IMG_20260416_212349.png" alt="Exterior cleaning at front elevation of a home" />
+        <img class="gallery-image" src="images/IMG_20260416_212350.png" alt="Side-yard access for upper siding cleaning" />
+      </div>
+    </section>
+
+    <section id="contact" class="section panel reveal">
+      <div class="section-head">
+        <p class="kicker">Frontend-Only Form</p>
+        <h2>Contact TrueFinish</h2>
+      </div>
+      <p class="form-note">No backend in this repo. This form submits directly to Web3Forms.</p>
+
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="54eee5f1-f82f-48c1-84fd-e6bdd45fd601" />
+        <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off" />
+
+        <label for="fullName">Full Name</label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+        <label for="zipCode">Zip Code</label>
+        <input
+          id="zipCode"
+          name="zipCode"
+          type="text"
+          inputmode="numeric"
+          autocomplete="postal-code"
+          pattern="^\d{5}(-\d{4})?$"
+          title="Use a 5-digit ZIP or ZIP+4 format"
+          required
+        />
+
+        <label for="cleaningNeeds">What would you like us to clean?</label>
+        <textarea id="cleaningNeeds" name="cleaningNeeds" rows="5" required></textarea>
+
+        <button id="contactSubmit" type="submit">Send Request</button>
+        <p id="formStatus" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>TrueFinish Exterior Cleaning</p>
+    <p>Windows | Gutters | Driveways | House Wash</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <img id="lightboxImage" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
